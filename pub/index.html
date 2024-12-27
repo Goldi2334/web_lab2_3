@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Weblab</title>
+</head>
+<body class="bg-sea_blue">
+<header class="bg-cyan border">
+    <div class="flex flex-row md:justify-between items-center p-5 max-h-32 md:max-h-20 sticky top-1">
+        <div class="men md:hidden inline-grid">
+            <a href="">
+                <i class="fa-solid fa-bars text-white md:hidden text-xl w-10"></i>
+            </a>
+        </div>
+        <div class="hidden md:flex w-auto justify-items-center md:w-1/12">
+            <a href="/pub/index.html" class="w-4/12 ">
+                <img src="/pub/images/birthday-cake-svgrepo-com.svg" alt="LOGO">
+            </a>
+        </div>
+        <div class="basic-1/3 info ">
+            <nav class="flex justify-center gap-3 p-6 my-14 text-lg">
+                <ul class="grid grid-cols-2 md:flex gap-7">
+                    <li><a class="font-mono text-black " href="#">Drinks</a></li>
+                    <li><a class="font-mono text-black " href="#">Vegetables</a></li>
+                    <li><a class="font-mono text-black " href="#">Bakery</a></li>
+                    <li><a class="font-mono text-black " href="#">Snacks</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="bg-gray-100 p-4 ">
+    <div class="container mx-auto md:p-4 md:grid md:grid-cols-4 md:gap-6 md:max-w-none md:h-screen ">
+        <div class=" bg-slot_bg md:col-span-1 border rounded-2xl md:p-4 my-4 h-96 md:h-auto">
+            <h2 class="text-lg font-semibold mb-4 text-center">Selected Cakes</h2>
+            <ul id="selected-cakes" class="list-disc list-inside px-4"></ul>
+        </div>
+        <div class="md:col-span-2 md:grid md:grid-rows-[auto,1fr] md:grid-cols-2 md:gap-6 ">
+            <div class="h-80 md:flex md:items-center md:justify-center my-4">
+                <img src="/pub/images/chocolate_cake.png " alt="Chocolate_Cake" class="rounded-3xl">
+            </div>
+            <div class="h-80 md:flex md:items-center md:justify-center my-4">
+                <img src="/pub/images/Black-Velvet-Cake.png" class="rounded-3xl" alt="Black-Velvet-Cake">
+            </div>
+            <div class="bg-slot_bg border rounded-2xl md:p-4 md:col-span-2 my-4 h-48 md:h-auto">
+                Main Content
+            </div>
+        </div>
+        <div class="md:col-span-1 md:grid md:grid-rows-[2fr,1fr] md:gap-6 ">
+            <div class="bg-slot_bg border rounded-2xl md:p-4 md:flex-grow my-4 md:h-auto h-80">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-lg font-semibold mb-4">Select a Cake</h2>
+                    <div class="w-full max-w-xs flex flex-col h-96">
+                        <div class="flex justify-center md:mb-96 ">
+                            <select id="cake-select"
+                                class="block w-full bg-in_section_bg border rounded px-4 py-2 focus:outline-none focus:ring-2">
+                            </select>
+                        </div>
+                        <div class="flex-grow flex items-end justify-center md:mt-9 ">
+                            <button id="add-cake-btn" class="bg-in_section_bg border px-7 py-2 rounded mb-32">
+                                Select Cake
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slot_bg border rounded-2xl md:my-4 md:flex-grow md:h-auto h-40 ">
+                <div class="my-28">
+                    <button id="payment_button" class="bg-in_section_bg border px-7 py-4 rounded mx-40">
+                        Go to payment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bg-cyan border">
+    <div class="container mx-auto p-4 md:grid gap-6 max-w-none md:max-h-52">
+        <div class="md:grid md:grid-cols-3 md:gap-4 py-4">
+            <a class="border border-gray-300 rounded-2xl p-4 my-4" href="#">
+               Support
+            </a>
+            <a class="border border-gray-300 rounded-2xl p-4 my-4" href="#">
+                Contact us
+            </a>
+            <a class="border border-gray-300 rounded-2xl p-4 my-4" href="#">
+                Phone number
+            </a>
+        </div>
+    </div>
+</footer>     
+<script src="scripts.js"></script>
+</body>
+</html>
